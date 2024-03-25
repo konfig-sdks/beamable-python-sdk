@@ -1,0 +1,95 @@
+# coding: utf-8
+
+"""
+    history basic
+
+    var Beamable = BeamContext.Default; - That one line of code is a gateway to everything you need to build custom server logic via microservices along with a world of LiveOps tools and live services to build games that players love.
+
+    The version of the OpenAPI document: 1.0
+    Contact: support@beamable.com
+    Created by: https://api.beamable.com
+"""
+
+from beamable_python_sdk.paths.basic_payments_test_purchase_cancel.post import CancelPurchase
+from beamable_python_sdk.paths.basic_payments_itunes_purchase_cancel.post import CancelPurchaseProcess
+from beamable_python_sdk.paths.basic_payments_itunes_purchase_complete.post import CompleteItunesPurchase
+from beamable_python_sdk.paths.basic_payments_test_purchase_complete.post import CompletePurchase
+from beamable_python_sdk.paths.basic_payments_coupon_purchase_complete.post import CompletePurchase0
+from beamable_python_sdk.paths.basic_payments_googleplay_purchase_complete.post import CompletePurchaseProcess
+from beamable_python_sdk.paths.basic_payments_coupon_purchase_begin.post import CouponPurchaseBegin
+from beamable_python_sdk.paths.basic_payments_coupon_purchase_cancel.post import CouponPurchaseCancel
+from beamable_python_sdk.paths.basic_payments_facebook_purchase_begin.post import FacebookPurchaseBegin
+from beamable_python_sdk.paths.basic_payments_facebook_purchase_cancel.post import FacebookPurchaseCancel
+from beamable_python_sdk.paths.basic_payments_facebook_purchase_complete.post import FacebookPurchaseComplete
+from beamable_python_sdk.paths.basic_payments_facebook_purchase_fail.post import FacebookPurchaseFailure
+from beamable_python_sdk.paths.basic_payments_coupon_purchase_fail.post import FailPurchase
+from beamable_python_sdk.paths.basic_payments_googleplay_purchase_begin.post import GooglePlayPurchaseBegin
+from beamable_python_sdk.paths.basic_payments_googleplay_purchase_cancel.post import GooglePlayPurchaseCancel
+from beamable_python_sdk.paths.basic_payments_windows_purchase_begin.post import InitializePurchaseProcess
+from beamable_python_sdk.paths.basic_payments_itunes_purchase_begin.post import ItunesPurchaseBegin
+from beamable_python_sdk.paths.basic_payments_itunes_purchase_track.post import ItunesPurchaseTrack
+from beamable_python_sdk.paths.basic_payments_test_purchase_begin.post import ProcessBegin
+from beamable_python_sdk.paths.basic_payments_windows_purchase_complete.post import ProcessComplete
+from beamable_python_sdk.paths.basic_payments_itunes_purchase_fail.post import ProcessFailure
+from beamable_python_sdk.paths.basic_payments_test_purchase_fail.post import ProcessFailure0
+from beamable_python_sdk.paths.basic_payments_googleplay_purchase_fail.post import ProcessFailure1
+from beamable_python_sdk.paths.basic_payments_windows_purchase_fail.post import ProcessFailure2
+from beamable_python_sdk.paths.basic_payments_steam_purchase_begin.post import SteamPurchaseBegin
+from beamable_python_sdk.paths.basic_payments_steam_purchase_cancel.post import SteamPurchaseCancel
+from beamable_python_sdk.paths.basic_payments_steam_purchase_complete.post import SteamPurchaseComplete
+from beamable_python_sdk.paths.basic_payments_steam_purchase_fail.post import SteamPurchaseFail
+from beamable_python_sdk.paths.basic_payments_test_purchase_track.post import TrackPurchasePost
+from beamable_python_sdk.paths.basic_payments_coupon_purchase_track.post import TrackPurchasePost0
+from beamable_python_sdk.paths.basic_payments_facebook_purchase_track.post import TrackPurchasePost1
+from beamable_python_sdk.paths.basic_payments_googleplay_purchase_track.post import TrackPurchasePost2
+from beamable_python_sdk.paths.basic_payments_steam_purchase_track.post import TrackPurchasePost3
+from beamable_python_sdk.paths.basic_payments_windows_purchase_cancel.post import WindowsPurchaseCancel
+from beamable_python_sdk.paths.basic_payments_windows_purchase_track.post import WindowsPurchaseTrack
+from beamable_python_sdk.apis.tags.payment_api_raw import PaymentApiRaw
+
+
+class PaymentApi(
+    CancelPurchase,
+    CancelPurchaseProcess,
+    CompleteItunesPurchase,
+    CompletePurchase,
+    CompletePurchase0,
+    CompletePurchaseProcess,
+    CouponPurchaseBegin,
+    CouponPurchaseCancel,
+    FacebookPurchaseBegin,
+    FacebookPurchaseCancel,
+    FacebookPurchaseComplete,
+    FacebookPurchaseFailure,
+    FailPurchase,
+    GooglePlayPurchaseBegin,
+    GooglePlayPurchaseCancel,
+    InitializePurchaseProcess,
+    ItunesPurchaseBegin,
+    ItunesPurchaseTrack,
+    ProcessBegin,
+    ProcessComplete,
+    ProcessFailure,
+    ProcessFailure0,
+    ProcessFailure1,
+    ProcessFailure2,
+    SteamPurchaseBegin,
+    SteamPurchaseCancel,
+    SteamPurchaseComplete,
+    SteamPurchaseFail,
+    TrackPurchasePost,
+    TrackPurchasePost0,
+    TrackPurchasePost1,
+    TrackPurchasePost2,
+    TrackPurchasePost3,
+    WindowsPurchaseCancel,
+    WindowsPurchaseTrack,
+):
+    """NOTE:
+    This class is auto generated by Konfig (https://konfigthis.com)
+    """
+    raw: PaymentApiRaw
+
+    def __init__(self, api_client=None):
+        super().__init__(api_client)
+        self.raw = PaymentApiRaw(api_client)

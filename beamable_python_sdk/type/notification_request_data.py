@@ -1,0 +1,40 @@
+# coding: utf-8
+
+"""
+    history basic
+
+    var Beamable = BeamContext.Default; - That one line of code is a gateway to everything you need to build custom server logic via microservices along with a world of LiveOps tools and live services to build games that players love.
+
+    The version of the OpenAPI document: 1.0
+    Contact: support@beamable.com
+    Created by: https://api.beamable.com
+"""
+
+from datetime import datetime, date
+import typing
+from enum import Enum
+from typing_extensions import TypedDict, Literal, TYPE_CHECKING
+
+from beamable_python_sdk.type.notification_request_data_message_params import NotificationRequestDataMessageParams
+from beamable_python_sdk.type.notification_request_data_meta import NotificationRequestDataMeta
+
+class RequiredNotificationRequestData(TypedDict):
+    pass
+
+class OptionalNotificationRequestData(TypedDict, total=False):
+    messageParams: NotificationRequestDataMessageParams
+
+    channel: str
+
+    messageKey: str
+
+    context: str
+
+    shard: str
+
+    meta: NotificationRequestDataMeta
+
+    messageFull: str
+
+class NotificationRequestData(RequiredNotificationRequestData, OptionalNotificationRequestData):
+    pass
